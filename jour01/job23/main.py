@@ -1,5 +1,5 @@
 def draw_rectangle(a, b):
-    j = 1
+    # j = 1
     k = 1
     
     while k <= b:
@@ -14,6 +14,7 @@ def draw_rectangle(a, b):
                 
                 i = i + 1
         else:
+            j = 1
             while j <= a:
                 if j == a:
                     print(' |')
