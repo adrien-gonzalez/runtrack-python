@@ -1,8 +1,11 @@
 class Personne:
     
-    def __init__(self):
-        self.nom = "gonzalez"
-        self.prenom = "adrien"
+    nom = ''
+    prenom = ''
+    
+    def __init__(self, nom, prenom):
+        self.nom = nom
+        self.prenom = prenom
         
     def SePresenter(self):
         print(self.nom+' '+self.prenom)
@@ -19,7 +22,7 @@ class Personne:
     def setPrenom(self, prenom):
         self.prenom = prenom
         
-p1 = Personne()
+p1 = Personne('gonzalez', 'adrien')
 p1.SePresenter()
 p1.setNom('nouveau nom')
 p1.getNom()
